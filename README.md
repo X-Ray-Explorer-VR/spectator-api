@@ -1,7 +1,7 @@
 # 🧩 Spectator API - X-Ray Explorer VR
 
 <p align="right">
-  Developed by: <a href="https://github.com/AlexAzumi">Gilberto Castillo 🐈</a>
+  Developed by: <a href="https://github.com/LouiseV98">Gilberto Castillo 🐈</a>
 </p>
 
 Spectator API is a REST API developed using Python that allows the spectator frontend get all the bone related information from a database.
