@@ -9,7 +9,6 @@ COPY . .
 
 # Flask environment
 ENV IP="0.0.0.0"
-ENV PORT=5000
 
 # MariaDB connection
 ENV DB_HOST="localhost"
@@ -19,4 +18,4 @@ ENV DB_NAME="skeleton"
 
 EXPOSE ${PORT}
 
-CMD ["python", "api_server.py", "--host=${IP}", "--port=${PORT}"]
+CMD ["flask", "run", "--host=${IP}"]
