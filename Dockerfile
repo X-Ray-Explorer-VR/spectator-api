@@ -8,7 +8,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Flask environment
-ENV IP="0.0.0.0"
+ENV PORT=5000
 
 # MariaDB connection
 ENV DB_HOST="localhost"
@@ -18,4 +18,4 @@ ENV DB_NAME="skeleton"
 
 EXPOSE ${PORT}
 
-CMD ["flask", "run", "--host=${IP}"]
+CMD ["python3", "-m", "flask", "run", "--host=0.0.0.0"]
