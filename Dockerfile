@@ -1,4 +1,4 @@
-FROM python:3
+FROM python:3-alpine
 
 WORKDIR /app
 
@@ -9,12 +9,6 @@ COPY . .
 
 # Flask environment
 ENV PORT=5000
-
-# MariaDB connection
-ENV DB_HOST="localhost"
-ENV DB_USER="root"
-ENV DB_PASSWORD=""
-ENV DB_NAME="skeleton"
 
 EXPOSE ${PORT}
 
